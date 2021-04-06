@@ -59,7 +59,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Kcptun
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy
 	bool "Include Haproxy"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_ChinaDNS_NG
 	bool "Include ChinaDNS-NG"
@@ -67,7 +67,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_ChinaDNS_NG
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_Dns2socks
 	bool "Include Dns2socks"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_V2ray-plugin
 	bool "Include V2ray-plugin (Shadowsocks plugin)"
