@@ -167,7 +167,7 @@ function gen_outbound(node, tag, is_proxy, proxy_tag)
                                 id = node.uuid,
                                 alterId = tonumber(node.alter_id),
                                 level = 0,
-                                security = (node.protocol == "vmess") and node.security or nil,
+                                security = (node.protocol == "vmess") and ((node.stream_security == "tls") and "zero" or node.security) or nil,
                                 encryption = node.encryption or "none",
                                 flow = node.flow or nil
                             }
