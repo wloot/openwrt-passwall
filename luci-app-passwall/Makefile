@@ -19,27 +19,27 @@ menu "Configuration"
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks
 	bool "Include Shadowsocks"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Server
 	bool "Include Shadowsocks Server"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR
 	bool "Include ShadowsocksR"
-	default y
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Server
 	bool "Include ShadowsocksR Server"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_Xray
 	bool "Include Xray"
-	default y if i386||x86_64||arm||aarch64
+	default y
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Trojan_Plus
 	bool "Include Trojan_Plus"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_Trojan_GO
 	bool "Include Trojan_GO"
@@ -71,11 +71,11 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Dns2socks
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_V2ray-plugin
 	bool "Include V2ray-plugin (Shadowsocks plugin)"
-	default y if i386||x86_64||arm||aarch64
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Simple-obfs
 	bool "Include Simple-obfs (Shadowsocks plugin)"
-	default y if i386||x86_64||arm||aarch64
+	default n
 
 endmenu
 endef
